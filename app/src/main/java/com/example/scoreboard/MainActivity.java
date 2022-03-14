@@ -15,18 +15,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_page3);
 
-        mAuth = FirebaseAuth.getInstance();
-        Button logout = findViewById(R.id.logOut);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mAuth.signOut();
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//        mAuth = FirebaseAuth.getInstance();
+//        Button logout = findViewById(R.id.logOut);
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mAuth.signOut();
+//                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }

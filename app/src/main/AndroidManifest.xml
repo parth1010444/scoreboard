@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scoreboard">
         <activity
-            android:name=".MainActivity"
+            android:name=".Page3"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

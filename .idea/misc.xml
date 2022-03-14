@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/activity_page3.xml" value="0.264" />
+        <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/custom_list_view_page2.xml" value="0.4" />
+        <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/custom_list_view_page3.xml" value="0.4" />
+        <entry key="..\:/AndroisStudioProjects/Scoreboard/app/src/main/res/layout/custom_listview_page3.xml" value="0.4" />
       </map>
     </option>
   </component>
