@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -63,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         else{
             // sign in
+
         }
     }
     private void signIn() {
@@ -98,6 +100,10 @@ public class LoginActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Log.i("user Signed In",user.getEmail().toString());
+                            Toast.makeText(getApplicationContext(),"SignIn Success",Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                            startActivity(intent);
 //                            updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
