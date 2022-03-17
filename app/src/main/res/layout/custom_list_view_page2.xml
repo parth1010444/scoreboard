@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,7 +11,8 @@
         android:layout_marginEnd="1dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,14 +22,14 @@
             android:layout_marginRight="16dp">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/matchNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="Match 1" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/matchDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -44,22 +45,22 @@
             android:layout_marginRight="16dp">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/team1icon"
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
                 app:srcCompat="@drawable/red_dfragon" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/team1Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="8dp"
-                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toEndOf="@+id/team1icon"
                 android:text="TEAM 1" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/team1Over"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -68,12 +69,12 @@
                 android:text="(8)" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/team1Score_Wickets"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="3dp"
-                android:layout_toStartOf="@+id/textView6"
+                android:layout_toStartOf="@+id/team1Over"
                 android:text="200-5" />
         </RelativeLayout>
 
@@ -85,22 +86,22 @@
             android:layout_marginRight="16dp">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/team1Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
                 app:srcCompat="@drawable/blackdragon" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/team2Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="8dp"
-                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toEndOf="@+id/team1Icon"
                 android:text="TEAM 2" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/team2Overs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -109,17 +110,17 @@
                 android:text="(8)" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/team2Score_Wickets"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="3dp"
-                android:layout_toStartOf="@+id/textView8"
+                android:layout_toStartOf="@+id/team2Overs"
                 android:text="200-5" />
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/matchResults"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -141,7 +142,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="16dp" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
