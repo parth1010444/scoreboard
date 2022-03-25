@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/base_cardview"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="374dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="38dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Tigers"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/innings"
+            android:layout_width="41dp"
+            android:layout_height="9dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:text="1st inning"
+            android:textSize="9sp"
+            app:layout_constraintStart_toEndOf="@+id/teamName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamName" />
+
+        <TextView
+            android:id="@+id/Wickets"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/score"
+            app:layout_constraintTop_toBottomOf="@+id/innings" />
+
+        <TextView
+            android:id="@+id/overs"
+            android:layout_width="27dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Wickets"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/crr"
+            android:layout_width="37dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:text="CRR"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/overs"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/runrate"
+            android:layout_width="40dp"
+            android:layout_height="11dp"
+            android:text="0.00"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/overs"
+            app:layout_constraintTop_toBottomOf="@+id/crr" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="363dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/BowlerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <TextView
+            android:id="@+id/MaidenBalls"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/BowlerWickets"
+            app:layout_constraintStart_toEndOf="@+id/BowlerName"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/BowlerRuns"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/BowlerWickets"
+            app:layout_constraintStart_toEndOf="@+id/MaidenBalls"
+            app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+        <TextView
+            android:id="@+id/BowlerWickets"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/BowlerName"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/BowlerER"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/BowlerWickets"
+            app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+        <TextView
+            android:id="@+id/BowlerOver"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/MaidenBalls"
+            app:layout_constraintStart_toEndOf="@+id/BowlerName"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Bowler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerName" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:text="M"
+            app:layout_constraintEnd_toStartOf="@+id/textView59"
+            app:layout_constraintStart_toEndOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerBallsPlayed" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:text="R"
+            app:layout_constraintEnd_toStartOf="@+id/textView59"
+            app:layout_constraintStart_toEndOf="@+id/textView57"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerFours" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:text="W"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerSix" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="ER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/textView59"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerStrikeRate" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:text="O"
+            app:layout_constraintEnd_toStartOf="@+id/textView57"
+            app:layout_constraintStart_toEndOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/NonStrikerRuns" />
+
+        <TextView
+            android:id="@+id/NonStrikerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerName" />
+
+        <TextView
+            android:id="@+id/NonStrikerRuns"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/NonStrikerBallsPlayed"
+            app:layout_constraintStart_toEndOf="@+id/NonStrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerRuns" />
+
+        <TextView
+            android:id="@+id/NonStrikerBallsPlayed"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/NonStrikerSix"
+            app:layout_constraintStart_toEndOf="@+id/NonStrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerBallsPlayed" />
+
+        <TextView
+            android:id="@+id/NonStrikerFours"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/NonStrikerSix"
+            app:layout_constraintStart_toEndOf="@+id/NonStrikerBallsPlayed"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerFour" />
+
+        <TextView
+            android:id="@+id/NonStrikerSix"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/NonStrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerSix" />
+
+        <TextView
+            android:id="@+id/NonStrikerStrikeRate"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/NonStrikerSix"
+            app:layout_constraintTop_toBottomOf="@+id/StrikerSR" />
+
+        <TextView
+            android:id="@+id/batsman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:text="Batsman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/StrikerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/batsman" />
+
+        <TextView
+            android:id="@+id/StrikerBallsPlayed"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/StrikerSix"
+            app:layout_constraintStart_toEndOf="@+id/StrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/Balls" />
+
+        <TextView
+            android:id="@+id/StrikerFour"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/StrikerSix"
+            app:layout_constraintStart_toEndOf="@+id/StrikerBallsPlayed"
+            app:layout_constraintTop_toBottomOf="@+id/fours" />
+
+        <TextView
+            android:id="@+id/StrikerSix"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/StrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/sixes" />
+
+        <TextView
+            android:id="@+id/StrikerSR"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/StrikerSix"
+            app:layout_constraintTop_toBottomOf="@+id/SR" />
+
+        <TextView
+            android:id="@+id/StrikerRuns"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/StrikerBallsPlayed"
+            app:layout_constraintStart_toEndOf="@+id/StrikerName"
+            app:layout_constraintTop_toBottomOf="@+id/Runs" />
+
+        <TextView
+            android:id="@+id/Balls"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="B"
+            app:layout_constraintEnd_toStartOf="@+id/fours"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/batsman"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fours"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="4s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.334"
+            app:layout_constraintStart_toEndOf="@+id/batsman"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sixes"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="24dp"
+            android:text="6s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toEndOf="@+id/fours"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SR"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="SR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toEndOf="@+id/sixes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Runs"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:text="R"
+            app:layout_constraintEnd_toStartOf="@+id/Balls"
+            app:layout_constraintStart_toEndOf="@+id/batsman"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="368dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

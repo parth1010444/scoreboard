@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scoreboard">
         <activity
+            android:name=".currentMatchActivity"
+            android:exported="false" />
+        <activity
             android:name=".Page3"
             android:exported="false" />
         <activity

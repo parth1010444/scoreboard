@@ -1,5 +1,7 @@
 package com.example.scoreboard;
 
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +35,16 @@ public class MatchScheduleAdapter extends FirebaseRecyclerAdapter<ScheduleModel,
         myViewHolder.Team1Over.setText(String.valueOf(scheduleModel.getTeam1Over()));
         myViewHolder.Team2Over.setText(String.valueOf(scheduleModel.getTeam2Over()));
 
+
+        myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String visitId = getRef(myViewHolder.getAdapterPosition()).getKey();
+                Intent currentMatchIntent = new Intent(myViewHolder.itemView.getContext(), currentMatchActivity.class);
+                currentMatchIntent.putExtra("visitId", visitId);
+                myViewHolder.itemView.getContext().startActivity(currentMatchIntent);
+            }
+        });
     }
 
     @NonNull
@@ -55,6 +67,9 @@ public class MatchScheduleAdapter extends FirebaseRecyclerAdapter<ScheduleModel,
             Team1Over = (TextView)itemView.findViewById(R.id.team1Over);
             Team2Over = (TextView)itemView.findViewById(R.id.team2Overs);
 
+
         }
     }
+
+
 }
